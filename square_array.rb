@@ -1,13 +1,5 @@
-def prime?(num)
-  if num <= 1 
-    return false
-  else array = (2..(num-1)).to_a
-  new_array = []
-    array.each { |divider| new_array << num % divider }
-  if new_array.include?(0)
-  return false
-  else
-  return true
-  end
-end
+def square_array(array)
+  arr = []
+  array.each { |i| arr << i ** 2 }
+  arr
 end
